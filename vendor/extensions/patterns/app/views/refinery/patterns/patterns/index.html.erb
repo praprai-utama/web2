@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="patterns">
+    <% @patterns.each do |pattern| %>
+      <li>
+        <%= link_to pattern.name, refinery.patterns_pattern_path(pattern) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

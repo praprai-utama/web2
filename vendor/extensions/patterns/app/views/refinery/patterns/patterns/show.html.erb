@@ -1,0 +1,57 @@
+<% content_for :body_content_title do %>
+  <%= @pattern.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @pattern.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Dimensions</h1>
+    <p>
+      <%=raw @pattern.dimensions %>
+    </p>
+  </section>
+  <section>
+    <h1>Manufactured On</h1>
+    <p>
+      <%=raw @pattern.manufactured_on %>
+    </p>
+  </section>
+  <section>
+    <h1>Upright</h1>
+    <p>
+      <%=raw @pattern.upright %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @pattern.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @pattern.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="patterns">
+      <% @patterns.each do |pattern| %>
+        <li>
+          <%= link_to pattern.name, refinery.patterns_pattern_path(pattern) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

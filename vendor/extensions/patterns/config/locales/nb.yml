@@ -1,0 +1,32 @@
+nb:
+  refinery:
+    plugins:
+      patterns:
+        title: Patterns
+    patterns:
+      admin:
+        patterns:
+          actions:
+            create_new: Lag en ny Pattern
+            reorder: Endre rekkefølgen på Patterns
+            reorder_done: Ferdig å endre rekkefølgen Patterns
+          records:
+            title: Patterns
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Patterns enda. Klikk på "Lag en ny Pattern" for å legge til din første pattern.
+          pattern:
+            view_live_html: Vis hvordan denne pattern ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne pattern
+            delete: Fjern denne pattern permanent
+      patterns:
+        show:
+          other: Andre Patterns
+  activerecord:
+    attributes:
+      'refinery/patterns/pattern':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

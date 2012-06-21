@@ -1,0 +1,33 @@
+es:
+  refinery:
+    plugins:
+      patterns:
+        title: Patterns
+#        article: masculino/femenino
+    patterns:
+      admin:
+        patterns:
+          actions:
+            create_new: Crear nuevo pattern
+            reorder: Reordenar patterns
+            reorder_done: Reordenación de patterns completada
+          records:
+            title: Patterns
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay patterns todavía. Pulsa en "Crear nuevo Pattern" para crear tu primer pattern.
+          pattern:
+            view_live_html: Ver este pattern como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este pattern
+            delete: Borrar este pattern para siempre
+      patterns:
+        show:
+          other: Otros patterns
+  activerecord:
+    attributes:
+      'refinery/patterns/pattern':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

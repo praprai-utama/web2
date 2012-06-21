@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      patterns:
+        title: Patterns
+    patterns:
+      admin:
+        patterns:
+          actions:
+            create_new: Maak een nieuwe Pattern
+            reorder: Wijzig de volgorde van de Patterns
+            reorder_done: Klaar met het wijzingen van de volgorde van de Patterns
+          records:
+            title: Patterns
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Patterns. Druk op 'Maak een nieuwe Pattern' om de eerste aan te maken.
+          pattern:
+            view_live_html: Bekijk deze pattern op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze pattern
+            delete: Verwijder deze pattern voor eeuwig
+      patterns:
+        show:
+          other: Andere Patterns
+  activerecord:
+    attributes:
+      'refinery/patterns/pattern':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

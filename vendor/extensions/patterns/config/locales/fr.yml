@@ -1,0 +1,32 @@
+fr:
+  refinery:
+    plugins:
+      patterns:
+        title: Patterns
+    patterns:
+      admin:
+        patterns:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Pattern
+            reorder: Réordonner les Patterns
+            reorder_done: Fin de réordonnancement des Patterns
+          records:
+            title: Patterns
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Pattern. Cliquer sur "Créer un(e) nouve(au/l/lle) Pattern" pour créer votre premi(er/ère) pattern.'
+          pattern:
+            view_live_html: Voir ce(t/tte) pattern <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) pattern
+            delete: Supprimer définitivement ce(t/tte) pattern
+      patterns:
+        show:
+          other: Autres Patterns
+  activerecord:
+    attributes:
+      'refinery/patterns/pattern':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

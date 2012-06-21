@@ -1,0 +1,32 @@
+en:
+  refinery:
+    plugins:
+      patterns:
+        title: Patterns
+    patterns:
+      admin:
+        patterns:
+          actions:
+            create_new: Add New Pattern
+            reorder: Reorder Patterns
+            reorder_done: Done Reordering Patterns
+          records:
+            title: Patterns
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Patterns yet. Click "Add New Pattern" to add your first pattern.
+          pattern:
+            view_live_html: View this pattern live <br/><em>(opens in a new window)</em>
+            edit: Edit this pattern
+            delete: Remove this pattern forever
+      patterns:
+        show:
+          other: Other Patterns
+  activerecord:
+    attributes:
+      'refinery/patterns/pattern':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description
